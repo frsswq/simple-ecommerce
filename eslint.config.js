@@ -2,14 +2,15 @@
 
 import { tanstackConfig } from '@tanstack/eslint-config'
 
-export default [...tanstackConfig, {
+export default [
+  ...tanstackConfig,
+  {
     rules: {
       'simple-import-sort/imports': 'off',
       'simple-import-sort/exports': 'off',
       'import/order': 'off',
       indent: ['error', 2],
-      'react/jsx-indent': ['error', 2],
-      'react/jsx-indent-props': ['error', 2],
-      'object-curly-spacing': ['error', 'always']
-    }
-}]
+      'object-curly-spacing': ['error', 'always'],
+    },
+  },
+]
