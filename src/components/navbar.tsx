@@ -1,28 +1,23 @@
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
 
 function Navbar() {
   return (
     <NavigationMenu className="min-w-full border-b sticky min-h-10 top-0">
-      <div className="flex w-full justify-between mx-2">
-        <NavigationMenuList></NavigationMenuList>
+      <div className="flex w-full h-full justify-between">
+        <div className="flex-1" />
         <NavigationMenuList className="flex justify-end">
           <NavigationMenuItem>
-            <NavigationMenuLink href="/" className="">
+            <NavigationMenuLink
+              href="/"
+              className="h-10 px-4 font-medium tracking-tight text-[13px]"
+            >
               About
             </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
       </div>
