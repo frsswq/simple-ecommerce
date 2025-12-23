@@ -50,7 +50,7 @@ function App() {
           {data.products.map((product) => (
             <div
               key={product.id}
-              className="flex flex-col h-full bg-neutral-50 border border-neutral-200 p-4"
+              className="flex flex-col h-full bg-neutral-50/20 border border-neutral-200 p-4"
             >
               <img
                 className="aspect-square object-cover mb-auto"
