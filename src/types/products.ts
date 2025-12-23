@@ -1,17 +1,11 @@
 // 24 categories
 // 194 products
 
-export interface ProductCategories {
-  slug: string
-  name: string
-  url: string
-}
-
 export interface Products {
   products: Array<Product>
-  total: number
-  skip: number
-  limit: number
+  total?: number
+  skip?: number
+  limit?: number
 }
 
 export interface Product {
