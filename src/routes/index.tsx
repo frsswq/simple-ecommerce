@@ -1,5 +1,5 @@
 import type { Products } from '@/types/products'
-import { createFileRoute, useLoaderData } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router'
 
 interface ProductQueryParams {
   limit?: number
@@ -41,7 +41,7 @@ export const Route = createFileRoute('/')({
 })
 
 function App() {
-  const data = useLoaderData({ from: '/' })
+  const data = Route.useLoaderData()
 
   return (
     <main className="flex items-center justify-center w-full h-fit px-12 py-8">
