@@ -7,7 +7,7 @@ import {
 
 function Navbar() {
   return (
-    <NavigationMenu className="min-w-full border-b sticky min-h-10 top-0">
+    <NavigationMenu className="min-w-full border-b sticky min-h-10 top-0 bg-white">
       <div className="flex w-full h-full justify-between">
         <div className="flex-1" />
         <NavigationMenuList className="flex justify-end">
