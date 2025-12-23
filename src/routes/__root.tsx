@@ -15,7 +15,7 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Lorem ipsum',
+        title: 'AniList Clone',
       },
     ],
     links: [
